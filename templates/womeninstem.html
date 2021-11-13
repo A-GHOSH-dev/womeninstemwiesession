@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+{% for stems in stemdataorder %}
+<div class="card text-center m-5">
+    <div class="card-header">
+        {{stems.field}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{stems.name}}</h5>
+      <p class="card-text">{{stems.work}}</p>
+      <a href="{{stems.link}}" class="btn btn-primary">Visit Reel</a>
+    </div>
+    <div class="card-footer text-muted">
+        {{stems.achieve}}
+    </div>
+  </div>
+  {% endfor%}
+{% endblock body %}

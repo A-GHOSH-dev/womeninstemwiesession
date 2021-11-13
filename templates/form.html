@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<form action="/form" method="POST" class="m-5">
+    {% csrf_token %}
+        
+    <div class="form-group m-3">
+      <label for="field">Field</label>
+      <input type="text" class="form-control" name="field" id="field" placeholder="Field">
+    </div>
+    <div class="form-group m-3">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+      </div>
+      
+    
+    <div class="form-group m-3">
+      <label for="work">Work</label>
+      <textarea class="form-control" name="work" id="work" rows="3"></textarea>
+    </div>
+    <div class="form-group m-3">
+        <label for="link">Reel Link</label>
+        <input type="url" class="form-control" name="link" id="link" placeholder="Reel Link">
+      </div>
+    <div class="form-group m-3">
+        <label for="achieve">Achievments</label>
+        <textarea class="form-control" name="achieve" id="achieve" rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock body %}

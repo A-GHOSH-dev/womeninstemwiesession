@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<form action="/sharestory" method="POST" class="m-5">
+    {% csrf_token %}
+    <div class="form-group m-3">
+        <label for="namess">Name</label>
+        <input type="text" class="form-control" name="namess" id="namess" placeholder="Name">
+      </div> 
+       
+    <div class="form-group m-3">
+        <label for="story">Story</label>
+        <textarea class="form-control" name="story" id="story" rows="3"></textarea>
+      </div> 
+      <div class="form-group m-3">
+        <label for="achievess">Achievments</label>
+        <textarea class="form-control" name="achievess" id="achievess" rows="3"></textarea>
+      </div> 
+    <div class="form-group m-3">
+      <label for="contact">Contact</label>
+      <input type="text" class="form-control" name="contact" id="contact" placeholder="Contact">
+    </div>
+    
+      
+   
+    <div class="form-group m-3">
+        <label for="vlink">Video</label>
+        <input type="url" class="form-control" name="vlink" id="vlink" placeholder="Video Link">
+      </div>
+  
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock body %}

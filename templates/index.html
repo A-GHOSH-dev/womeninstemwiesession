@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<div class="m-5">
+  {% for msg in messages %}
+  {{msg}}
+  {% endfor %}  </div>
+
+<div id="carouselExampleIndicators" class="carousel slide m-5 " data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://th.bing.com/th/id/OIP.xtR_YDO1M6QQXSXyzcq8eQHaE7?pid=ImgDet&rs=1" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://th.bing.com/th/id/OIP.DH80lgNcMKwRz9kO6m7AGgHaE8?pid=ImgDet&rs=1" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://1.bp.blogspot.com/-Be04t1ww2-g/XmEcXRgHBwI/AAAAAAAAO1I/HzYEbpQ6dIwIhtzhncpeIpiZlHR6rmjHQCLcBGAsYHQ/s1600/Indian%2BWomen%2BScientists%2Bin%2BSTEM.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i0.wp.com/feminisminindia.com/wp-content/uploads/2019/12/2019-stem-women-scaled.jpg?w=2560&ssl=1" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://th.bing.com/th/id/OIP.gYhfpiojZ9nrxRRNG3_ivAHaD2?pid=ImgDet&rs=1" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://assets.thehansindia.com/h-upload/feeds/2019/03/11/128409-womenculture.jpg" class="d-block w-100" alt="...">
+      </div>
+     
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+{% endblock body %}
